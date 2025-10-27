@@ -11,8 +11,10 @@ initial-scale=1.0">
 <button id="loadData">Load Post Data</button>
 <div id="output" style="margin-top: 25px; border: 1px solid #ddd;
 padding: 10px;"></div>
+ 
 <script>
-document.getElementById("loadData").addEventListener("click", function() {
+
+  document.getElementById("loadData").addEventListener("click", function() {
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 if (xhr.readyState === 4) {
